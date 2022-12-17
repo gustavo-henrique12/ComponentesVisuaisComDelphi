@@ -1,0 +1,39 @@
+unit uFrmPrincipal;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, ComCtrls, StdCtrls;
+
+type
+  TFrmPrincipal = class(TForm)
+    PnlTitulo: TPanel;
+    PgCntrlPrincipal: TPageControl;
+    ts1: TTabSheet;
+    ts2: TTabSheet;
+    ts3: TTabSheet;
+    grp1: TGroupBox;
+    Label1: TLabel;
+    edtCaracteres: TEdit;
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmPrincipal: TFrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmPrincipal.FormShow(Sender: TObject);
+begin
+   PnlTitulo.Caption := 'Mudando o Caption do Panel com onShow';
+   PnlTitulo.Color := $00B9FFFF;
+end;
+
+end.
