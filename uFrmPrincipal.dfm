@@ -34,7 +34,7 @@ object FrmPrincipal: TFrmPrincipal
     Top = 81
     Width = 641
     Height = 320
-    ActivePage = ts1
+    ActivePage = ts2
     Align = alClient
     TabOrder = 1
     object ts1: TTabSheet
@@ -101,6 +101,50 @@ object FrmPrincipal: TFrmPrincipal
     object ts2: TTabSheet
       Caption = 'Aba 2'
       ImageIndex = 1
+      object lbl1: TLabel
+        Left = 384
+        Top = 16
+        Width = 98
+        Height = 17
+        Caption = 'Itens Selecionados'
+      end
+      object RgListaOpcoes: TRadioGroup
+        Left = 24
+        Top = 32
+        Width = 217
+        Height = 161
+        BiDiMode = bdLeftToRight
+        Caption = 'SELECIONE UMA DAS OP'#199#213'ES'
+        Color = clWhite
+        Columns = 3
+        ItemIndex = 0
+        Items.Strings = (
+          'Delphi'
+          'Python'
+          'PHP'
+          'Java'
+          '.NET'
+          'Ruby')
+        ParentBiDiMode = False
+        ParentColor = False
+        TabOrder = 0
+      end
+      object btn1: TButton
+        Left = 272
+        Top = 104
+        Width = 75
+        Height = 25
+        Caption = '>>'
+        TabOrder = 1
+      end
+      object LstBxItensSelecionados: TListBox
+        Left = 384
+        Top = 32
+        Width = 217
+        Height = 161
+        ItemHeight = 13
+        TabOrder = 2
+      end
     end
     object ts3: TTabSheet
       Caption = 'Aba 3'

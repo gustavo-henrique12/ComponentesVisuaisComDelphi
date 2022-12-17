@@ -19,6 +19,10 @@ type
     BtnExibirDataHora: TButton;
     pnl1: TPanel;
     btnProximo: TButton;
+    RgListaOpcoes: TRadioGroup;
+    btn1: TButton;
+    lbl1: TLabel;
+    LstBxItensSelecionados: TListBox;
     procedure FormShow(Sender: TObject);
     procedure edtCaracteresEnter(Sender: TObject);
     procedure edtCaracteresExit(Sender: TObject);

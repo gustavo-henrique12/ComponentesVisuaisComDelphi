@@ -1,7 +1,7 @@
 object FrmPrincipal: TFrmPrincipal
   Left = 445
   Top = 204
-  Width = 601
+  Width = 657
   Height = 440
   Caption = 'Trabalhando com Eventos e Componentes Visuais'
   Color = clBtnFace
@@ -17,7 +17,7 @@ object FrmPrincipal: TFrmPrincipal
   object PnlTitulo: TPanel
     Left = 0
     Top = 0
-    Width = 585
+    Width = 641
     Height = 81
     Align = alTop
     Caption = 'Trabalhando com Eventos no Delphi'
@@ -32,7 +32,7 @@ object FrmPrincipal: TFrmPrincipal
   object PgCntrlPrincipal: TPageControl
     Left = 0
     Top = 81
-    Width = 585
+    Width = 641
     Height = 320
     ActivePage = ts1
     Align = alClient
@@ -75,6 +75,27 @@ object FrmPrincipal: TFrmPrincipal
         ParentShowHint = False
         ShowHint = False
         TabOrder = 1
+      end
+      object pnl1: TPanel
+        Left = 0
+        Top = 248
+        Width = 633
+        Height = 44
+        Align = alBottom
+        TabOrder = 2
+        DesignSize = (
+          633
+          44)
+        object btnProximo: TButton
+          Left = 552
+          Top = 0
+          Width = 81
+          Height = 43
+          Anchors = [akTop, akRight, akBottom]
+          Caption = 'Pr'#243'ximo'
+          TabOrder = 0
+          OnClick = btnProximoClick
+        end
       end
     end
     object ts2: TTabSheet
