@@ -17,9 +17,12 @@ type
     Label1: TLabel;
     edtCaracteres: TEdit;
     BtnExibirDataHora: TButton;
+    pnl1: TPanel;
+    btnProximo: TButton;
     procedure FormShow(Sender: TObject);
     procedure edtCaracteresEnter(Sender: TObject);
     procedure edtCaracteresExit(Sender: TObject);
+    procedure btnProximoClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -60,6 +63,11 @@ begin
       end
       else
          edtCaracteres.Color := clWindow;
+end;
+
+procedure TFrmPrincipal.btnProximoClick(Sender: TObject);
+begin
+   PgCntrlPrincipal.ActivePageIndex := 1;
 end;
 
 end.
