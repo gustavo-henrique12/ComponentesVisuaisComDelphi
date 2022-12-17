@@ -17,7 +17,6 @@ type
     Label1: TLabel;
     edtCaracteres: TEdit;
     BtnExibirDataHora: TButton;
-    il1: TImageList;
     procedure FormShow(Sender: TObject);
     procedure edtCaracteresEnter(Sender: TObject);
     procedure edtCaracteresExit(Sender: TObject);
